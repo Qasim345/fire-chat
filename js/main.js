@@ -96,7 +96,7 @@ function displayMessage(username, message, time, id) {
   var messageElement = document.createElement('div');
   messageElement.setAttribute("class", "w-100 py-2 px-3 rounded shadow-sm my-2 bg-primary text-light");
   if (username == $(".username").val()) {
-    messageElement.innerHTML = `<div id="message-${id}" class="d-flex w-100 mb-2 justify-content-between align-items-center"><b>${username}</b><span data-id="${id}" class="ico" onclick="deleteMessage(this)">delete</span></div>`+`<p class="m-0 p-0 w-100">${message}</p><i>${time}</i>`;
+    messageElement.innerHTML = `<div id="message-${id}" class="d-flex w-100 mb-2 justify-content-between align-items-center"><div><span class="ico mr-2">account_circle</span><b>${username}</b></div><span data-id="${id}" class="ico" onclick="deleteMessage(this)">delete</span></div>`+`<p class="m-0 p-0 w-100">${message}</p><i>${time}</i>`;
   } else {
     messageElement.innerHTML = `<div class="d-flex w-100 mb-2 justify-content-between align-items-center"><b>${username}</b></div>`+`<p class="m-0 p-0 w-100">${message}</p><i>${time}</i>`;
   }
