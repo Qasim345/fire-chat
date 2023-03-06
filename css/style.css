@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'ProductSans';
+  outline: none !important;
+}
+@font-face{
+  font-family: 'ProductSans';
+  src: url(../fonts/ProductSans.ttf)
+}
+@font-face{
+  font-family: 'material-icons';
+  src: url(../fonts/material-icons.ttf)
+}
+
+span.ico{
+  font-family: 'material-icons';
+  cursor: pointer;
+  user-select: none;
+}
+main .my-input input{
+  width: calc(100% - 80px);
+}
+main .my-input .btn{
+  width: 70px;
+}
+.card .messages{
+  height: calc(100vh - 177px);
+  overflow-y: auto;
+}
