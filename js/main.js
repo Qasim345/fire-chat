@@ -99,7 +99,7 @@ function displayMessage(username, message, time, id) {
     messageElement.innerHTML = `<div id="message-${id}" class="d-flex w-100 mb-2 justify-content-between align-items-center"><div class="d-flex align-items-center"><span class="ico h3">account_circle</span><b class="ml-2">${username}</b></div><span data-id="${id}" class="ico" onclick="deleteMessage(this)">delete</span></div>`+`<p class="m-0 p-0 w-100">${message}</p><i>${time}</i>`;
   } else {
     $(messageElement).addClass("bg-info").removeClass("bg-primary");
-    messageElement.innerHTML = `<div class="d-flex w-100 mb-2 justify-content-between align-items-center"><div class="d-flex align-items-center"><span class="ico h3">account_circle</span><b class="ml-2">${username}</b></div></div>`+`<p class="m-0 p-0 w-100">${message}</p><i>${time}</i>`;
+    messageElement.innerHTML = `<div class="d-flex w-100 mb-2 justify-content-between align-items-center"><div class="d-flex align-items-center"><span class="ico h3 p-0 m-0">account_circle</span><b class="d-block ml-2">${username}</b></div></div>`+`<p class="m-0 p-0 w-100">${message}</p><i>${time}</i>`;
   }
   chatBox.appendChild(messageElement);
 }
